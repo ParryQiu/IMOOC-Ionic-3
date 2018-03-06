@@ -1,0 +1,29 @@
+{
+  "array":[
+    {
+      "messageId":"1",
+      "userId":"140000198202211138",
+      "username":"慕课大神",
+      "userImgUrl":"https://imoocqa.gugujiankong.com/users/59f334ce647eb43028cf9946.jpg",
+      "toUserId":"123321",
+      "toUserName":"慕女神",
+      "toUserImgUrl":"http://img.mukewang.com/user/57a322f00001e4ae02560256-40-40.jpg",
+      "time":1511071097000,
+      "message":"你好，如何测试机器人组件呢？",
+      "status":"success"
+
+    },
+    {
+      "messageId":"2",
+      "userId":"123321",
+      "username":"慕女神",
+      "userImgUrl":"http://img.mukewang.com/user/57a322f00001e4ae02560256-40-40.jpg",
+      "toUserId":"140000198202211138",
+      "toUserName":"慕课大神",
+      "toUserImgUrl":"https://imoocqa.gugujiankong.com/users/59f334ce647eb43028cf9946.jpg",
+      "time":1511071097000,
+      "message":"你可以给我发送任何内容，我会模拟回复内容给你，给你演示聊天组件的完整实现哦~~~",
+      "status":"success"
+    }
+  ]
+}

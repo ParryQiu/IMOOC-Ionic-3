@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>提问</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">取消</span>
+        <ion-icon name="md-close" showWhen="android"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>问题标题</ion-label>
+      <ion-input type="text" [(ngModel)]="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>问题内容</ion-label>
+      <ion-textarea type="text" rows="5" [(ngModel)]="content"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" block (click)="submitQuestion()">提 问</button>
+  </div>
+</ion-content>

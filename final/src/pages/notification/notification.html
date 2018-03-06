@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>通知</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let n of notificationList" (click)="gotoDetails(n.QuestionId)">
+      <ion-avatar item-left>
+        <img src="{{n.HeadFace}}">
+      </ion-avatar>
+      <h2>{{n.NotificationTitle}}</h2>
+      <p>{{n.NotificationMessage}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

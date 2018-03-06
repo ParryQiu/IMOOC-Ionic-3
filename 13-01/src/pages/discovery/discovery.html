@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>发现</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content 
+    pullingIcon="arrow-down" 
+    pullingText="下拉刷新" 
+    refreshingSpinner="circles" 
+    refreshingText="数据加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor="let q of questions" (click)="gotoDetails(q.IdentityId)">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="{{q.HeadFace}}">
+      </ion-avatar>
+      <p>{{q.UserNickName}}发布了该问题
+        <ion-icon class="more_button" name="more"></ion-icon>
+      </p>
+    </ion-item>
+    <h2>{{q.ContentTitle}}</h2>
+    <ion-card-content>
+      <p>{{q.ContentSummary}}</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col col-8 center text-left>
+        <ion-note>
+          {{q.LikeCount}}&nbsp;赞同&nbsp;&nbsp;·&nbsp;&nbsp;{{q.CommentCount}}&nbsp;评论&nbsp;&nbsp;·&nbsp;&nbsp;关注问题
+        </ion-note>
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

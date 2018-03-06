@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>回答</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">取消</span>
+        <ion-icon name="md-close" showWhen="android"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button  (click)="submit()">
+        <span ion-text color="primary" showWhen="ios">发布</span>
+        <ion-icon name="md-add-circle" showWhen="android"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>请输入回答内容</ion-label>
+      <ion-textarea type="text" rows="20" style="height:100%;" [(ngModel)]="content"></ion-textarea>
+    </ion-item>
+  </ion-list>
+</ion-content>

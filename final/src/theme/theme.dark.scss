@@ -1,0 +1,29 @@
+.dark-theme {
+  ion-content,.card,.floatMenu {
+    background-color: #1e2446 !important;
+    color: #fff !important;
+  }
+
+  .toolbar-title {
+    color: #fff !important;
+  }
+ 
+  .header .toolbar-background {
+    border-color: #140414 !important;
+    background-color: #3a3c4b !important;
+  }
+
+  .list,.label,.item{
+    background-color: #3a3c4b !important;
+    color:#FFFFFF !important;
+  }
+  .item{
+    border-bottom: 0.55px solid #2e2749 !important;
+  }
+  .item-inner,{
+    border: none !important;
+  }
+  .item-block{
+    border-bottom: 0.55px solid #2e2749 !important;
+  }
+}

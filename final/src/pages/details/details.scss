@@ -1,0 +1,29 @@
+page-details {
+  .card {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: none;
+  }
+  .card-content {
+    font-size: 1.4rem;
+  }
+  .button-default {
+    height: 1.8em;
+    font-family: 1.3rem;
+    float: right;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 0.9em;
+  }
+  .card p {
+    margin-top: 10px;
+  }
+  .answer_date {
+    float: right;
+    margin-bottom: 10px;
+  }
+  .toolbar-title {
+    font-size: 1.1rem;
+  }
+}

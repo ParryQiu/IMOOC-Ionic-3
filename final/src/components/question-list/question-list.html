@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item *ngFor="let q of questions" (click)="gotoDetails(q.IdentityId)">
+    <h2>{{q.ContentTitle}}</h2>
+    <p>{{q.ContentSummary}}</p>
+  </ion-item>
+</ion-list>

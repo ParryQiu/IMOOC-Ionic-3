@@ -1,0 +1,42 @@
+<!--
+  Generated template for the UserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>个人中心</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list class="marginTop marginBottom">
+    <button ion-item (click)="gotoHeadface()">
+      <ion-avatar item-start>
+        <img src="{{headface}}" />
+      </ion-avatar>
+      <h2>修改头像</h2>
+    </button>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>用户昵称</ion-label>
+      <ion-input type="text" [(ngModel)]="nickname"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding text-center class="paddingTop">
+    <button ion-button color="primary" block (click)="updateNickName()">保存</button>
+  </div>
+
+  <div padding text-center class="paddingTop">
+    <button ion-button color="danger" block (click)="logout()">注销</button>
+  </div>
+
+</ion-content>
